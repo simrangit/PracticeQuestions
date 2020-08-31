@@ -1,5 +1,7 @@
 import java.util.*;
-
+/*
+The program checks whether one array contains elements of another array
+*/
 public class CommonElements {
 
 	public static void main(String[] args) {
