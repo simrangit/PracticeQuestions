@@ -67,3 +67,4 @@ public class StringRotation {
 	}
 
 }
+// Output: It is not a rotation
