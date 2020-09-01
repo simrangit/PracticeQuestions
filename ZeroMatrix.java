@@ -4,10 +4,10 @@ public class ZeroMatrix {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int matrix[][] = { { 0, 2, 3, 4 }, 
-                { 5, 6, 7, 8 }, 
-                { 9, 0, 11, 12 }, 
-                { 13, 14, 15, 16 } }; 
+		int matrix[][] = { { 0, 2, 3, 4, 12 }, 
+                { 5, 6, 7, 8, 87 }, 
+                { 9, 0, 11, 12, 9 }, 
+                { 13, 14, 15, 16, 11 } }; 
 		
 		int m = matrix.length; // rows
 		int n = matrix[0].length; // columns
@@ -42,13 +42,15 @@ public class ZeroMatrix {
 			}
 		}
 		
-		for(int i = 0; i < m; i++)
+		// nullify Rows
+		for(int i = 0; i < row.length; i++)
 		{
 			if(row[i])
 				nullifyRow(matrix, i);
 		}
 		
-		for(int j = 0; j < n; j++)
+		//  nullify Columns
+		for(int j = 0; j < column.length; j++)
 		{
 			if(column[j])
 				nullifyColumn(matrix, j);
@@ -57,7 +59,7 @@ public class ZeroMatrix {
 	
 	public static void nullifyRow(int[][] matrix, int row)
 	{
-		for(int j = 0; j < matrix.length; j++)
+		for(int j = 0; j < matrix[0].length; j++)
 		{
 			matrix[row][j] = 0;
 		}
@@ -65,7 +67,7 @@ public class ZeroMatrix {
 	
 	public static void nullifyColumn(int[][] matrix, int column)
 	{
-		for(int i = 0; i < matrix[0].length; i++)
+		for(int i = 0; i < matrix.length; i++)
 		{
 			matrix[i][column] = 0;
 		}
