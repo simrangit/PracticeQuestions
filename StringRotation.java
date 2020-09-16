@@ -10,7 +10,7 @@ public class StringRotation {
 		// TODO Auto-generated method stub
 		
 		String input = "simran";
-		String rotated = "mranis";
+		String rotated = "mransi";
 		
 		boolean check = false;
 		
@@ -67,4 +67,3 @@ public class StringRotation {
 	}
 
 }
-// Output: It is not a rotation
